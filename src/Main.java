@@ -5,11 +5,12 @@ public class Main {
         isPalindromUseBuffer (myString);
     }
     public static void isPalindromUseBuffer (String text) {
-        String myString = text.replaceAll("\\s+","").toLowerCase();
-        StringBuffer stringBuffer = new StringBuffer(myString);
-        stringBuffer.reverse();
-        String myStringTwo = stringBuffer.toString();
-        if (myStringTwo.equals(myString)) {System.out.println( " это палиндром");} else System.out.println("это не палиндром");
+      String myString = text.replaceAll("\\s+","" ).toLowerCase();
+      StringBuffer stringBuffer = new StringBuffer(myString);
+      stringBuffer.reverse();
+      String myStringTwo = stringBuffer.toString();
+      if (myStringTwo.equals(myString)) {System.out.println(" это палиндром");} else System.out.println(" это не палиндром");
+
 
     }
 }
